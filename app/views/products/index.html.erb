@@ -17,7 +17,7 @@
       <tr>
         <td><%= product.name %></td>
         <td><%= product.url %></td>
-          <%- @product.image.attached? %>
+          <%- product.image.attached? %>
             <td><%= image_tag url_for(product.image) %></td>
           <%-end%>
         <td><%= image_tag product.image %></td>
