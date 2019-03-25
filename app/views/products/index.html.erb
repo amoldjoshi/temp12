@@ -17,9 +17,6 @@
       <tr>
         <td><%= product.name %></td>
         <td><%= product.url %></td>
-          <%- product.image.attached? %>
-            <td><%= image_tag url_for(product.image) %></td>
-          <%-end%>
         <td><%= image_tag product.image %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
